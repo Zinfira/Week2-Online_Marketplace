@@ -1,9 +1,20 @@
-body {
-  background-image: url("../img/wood.webp");
+body { 
+background-image: url("../img/wood.webp");
+ 
 }
 .container {
   background-image: linear-gradient(#f5ffff,#c5d3d4,#aee8e7, #91fffd);
 }
+.jumbotron {
+  text-align: center;
+ background-image: url("../img/intro\ pic.jpg");
+}
 .card {
   display: block;
+  margin-left: 25%;
+  margin-bottom: 10%;
+}
+
+.btn {
+  background-color: aliceblue;
 }
