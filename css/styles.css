@@ -1,0 +1,9 @@
+body {
+  background-image: url("../img/wood.webp");
+}
+.container {
+  background-image: linear-gradient(#f5ffff,#c5d3d4,#aee8e7, #91fffd);
+}
+.card {
+  display: block;
+}
