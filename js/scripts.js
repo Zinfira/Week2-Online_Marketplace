@@ -1,8 +1,16 @@
-$(document).ready(function(); {
-  $("input.radio").click(function(event) {
-  $("input:radio[name=flavor]:checked").val(event);
-  event.preventDefault(); 
-  
-  // var favoriteColor = $("#color").val();
+$(document).ready(function() {
+  var type;
+  $(".coffee").click(function() {
+    type = $("input:radio[name=type]:checked").val();
+    console.log(type)
   });
+
+  $("input.radio").submit(function(event) {
+    event.preventDefault();
+    var flavor = $("input:radio[name=flavor]:checked").val();
+  });
+
+
+  // var favoriteColor = $("#color").val();
+  
 });
