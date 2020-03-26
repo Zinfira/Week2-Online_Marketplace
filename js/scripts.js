@@ -5,9 +5,16 @@ $(document).ready(function() {
     console.log(type)
   });
 
-  $("input.radio").submit(function(event) {
-    event.preventDefault();
-    var flavor = $("input:radio[name=flavor]:checked").val();
+  var flavor;
+  $(".taste").click(function() {
+    flavor = $("input:radio[name=flavor]:checked").val();
+    console.log(flavor)
+  });
+
+  var milk;
+  $(".product").click(function() {
+    milk = $("input:radio[name=milk]:checked").val();
+    console.log(milk)
   });
 
 
