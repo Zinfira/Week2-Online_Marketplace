@@ -1,21 +1,15 @@
 $(document).ready(function() {
-  var type;
-  $(".coffee").click(function() {
-    type = $("input:radio[name=type]:checked").val();
+  $("#submit").click(function() {
+    var type = $("input:radio[name=type]:checked").val();
+    var flavor = $("input:radio[name=flavor]:checked").val();
+    var milk = $("input:radio[name=milk]:checked").val();
     console.log(type)
+    $("#output-div").replaceWith(`<h3 id="output-div">you ordered a ${flavor} ${type} with ${milk} milk</h3>`)
   });
 
-  var flavor;
-  $(".taste").click(function() {
-    flavor = $("input:radio[name=flavor]:checked").val();
-    console.log(flavor)
-  });
+ 
 
-  var milk;
-  $(".product").click(function() {
-    milk = $("input:radio[name=milk]:checked").val();
-    console.log(milk)
-  });
+  
 
 
   // var favoriteColor = $("#color").val();
